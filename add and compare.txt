@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,k,z=1;
+    int l,b,q,a=0;
+    cout<<"Enter size of array ";
+    cin>>i;
+    cout<<"Enter arrays ";
+    int n[i];
+    for(int j=0;j<i;j++){
+    cin>>n[j];}
+    cout<<"Enter a number ";
+    cin>>b;
+    for(int j=0;j<i;j++){
+    k=n[j];
+    for(int j=z;j<i;j++){
+     l=n[j];
+     q=k+l;
+    
+        if(b==q){
+        cout<< k<<" + "<<l<<" = "<<b<<endl;
+         a=a+1;}
+    }
+        //cout<<endl;
+      z= z+1;
+    }   
+      if(a==0)
+       cout<< b<<" This is not addition any number ";
+}
+
+
+
+
